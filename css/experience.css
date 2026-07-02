@@ -1,0 +1,127 @@
+.experience-container{
+
+    display: flex;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0px 20px;
+}
+
+.experience-sidebar{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 20px;
+    width: 30%;
+}
+
+.experience-page{
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.experience-page.active{
+    display: flex;
+}
+
+.exp-btn{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    
+    background: transparent;
+    border: 2px solid var(--accent);
+    border-radius: 4%;
+    color: var(--fg);
+
+    font-size: var(--fs-lg);
+    cursor: pointer;
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+.exp-btn img{
+    width: 24px;
+    height: 24px;
+
+}
+
+.exp-btn.active{
+    background-color: var(--accent);
+    color: var(--bg-card);
+}
+
+.navigator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--fg);
+    gap: 15px;
+    font-weight: bold;
+}
+
+.nav-arrow{
+    background: transparent;
+    color: var(--accent);
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: var(--fs-lg);
+}
+
+.nav-arrow:hover{
+    transform: scale(1.50);
+}
+
+.experience-about{
+    width: 85%;
+}
+
+.experience-content{
+    display: none;
+    padding: 35px;
+
+    border: 2px solid var(--accent);
+
+}
+
+
+.experience-content:hover {
+    cursor: pointer;
+    border-color: var(--accent-hover);
+    animation: borderGlitch 0.3s infinite linear;
+}
+
+.experience-content.active{
+    display: block;
+}
+
+
+.fade-line{
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right,transparent, var(--accent), transparent);
+    margin: 20px 0;
+}
+
+.experience-content ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience-content li{
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.experience-content li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+}

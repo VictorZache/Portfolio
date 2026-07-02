@@ -1,0 +1,98 @@
+.main-header {
+    background-color: rgba(22, 27, 34, 0.8);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid var(--border);
+
+    border-bottom: 2px solid var(--accent);    
+
+}
+
+
+.skip-link {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+.skip-link:focus {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: auto;
+    height: auto;
+    padding: var(--space-sm) var(--space-lg);
+    background-color: var(--bg-card);
+    color: var(--accent); /* Seu verde radioativo */
+    border: 2px solid var(--accent);
+    border-radius: var(--radius);
+    font-family: var(--font-sans);
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 9999;
+    
+
+    box-shadow: 
+        0 0 10px var(--accent),
+        inset 0 0 5px var(--accent);
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo h1 {
+    font-size: var(--fs-lg);
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: var(--space-lg);
+}
+
+.nav-menu a {
+    color: var(--fg-muted);
+    font-weight: 500;
+    font-size: var(--fs-sm);
+    
+}
+
+.nav-menu a:hover {
+    color: var(--accent);
+}
+
+
+.header-title {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    margin: 0 auto;
+    
+    position: relative;
+    z-index: 10;
+    
+
+    border-bottom: 2px solid var(--accent);
+
+    border-image: linear-gradient(to right, transparent, var(--accent) 50%, transparent)1;
+
+}
+
+
+
