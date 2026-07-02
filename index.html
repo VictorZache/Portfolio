@@ -6,112 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>João Victor Zaché | Dev Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/componentes.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/skill.css">
+    <link rel="stylesheet" href="./css/experience.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/animations.css">
 </head>
 
 <body>
 
+    <canvas id="bg-life"></canvas>
+
     <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
 
-    <header>
-        <h1>João Victor Zaché</h1>
-
-        <p class="headline">Frontend (HTML/CSS/JS) • Backend Java/Python • AWS em curso • Docs PT/EN</p>
-
-        <div class="cta">
-            <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-            <a href="#contact" class="btn btn-secondary">Entrar em Contato</a>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">
+                    <h1>Victor Zaché | Dev</h1>
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#experience">Experiencias</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-
-        <div class="social">
-
-            <a href="https://github.com/VictorZache" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
-                    class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-zach%C3%A9-700567244/" target="_blank"
-                rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-            <a href="mailto:victorzache.dev@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
-
-        </div>
-
-        <nav>
-            <ul>
-
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#contact">Contato</a></li>
-
-            </ul>
-        </nav>
-
     </header>
 
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <p class="hero-greeting" id="typing-1">Olá, eu sou Victor Zaché</p>
+            <h2>Desenvolvedor Full Stack</h2>
+            <p class="headline" id="typing">Frontend (HTML/CSS/JS) • Backend Java/Python • AWS • Docs PT/EN</p>
 
+            <div class="cta">
+                <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                <a href="#contact" class="btn btn-secondary">Entrar em Contato</a>
+            </div>
+        </div>
+    </section>
 
     <main id="main">
 
         <section id="about">
-
-            <header>
+            <header class="header-title">
                 <h2>Sobre mim</h2>
             </header>
 
             <div class="about-grid">
 
-                <div class="about-text">
-
-                    <p>Suporte Tecnico TI. Estudante de ADS e Engenharia de Software. Curso AWS em andamento.</p>
-                    <p>Construo interfaces responsivas com HTML, CSS e JavaScript. Back-end em Java e Python.
-                        Documentação técnica em PT/EN.</p>
-
-                    <div class="about-highlights">
-
-                        <div class="highlight">
-                            <i class="bi bi-shield-check" aria-hidden="true"></i>
-                            <span> Código testado: projetos com Jest/JUnit + CI/CD configurado</span>
-                        </div>
-                        <div class="highlight">
-                            <i class="bi bi-lightning-charge" aria-hidden="true"></i>
-                            <span>Entrega no prazo, escopo fixo, sem surpresas</span>
-                        </div>
-                        <div class="highlight">
-                            <i class="bi bi-globe" aria-hidden="true"></i>
-                            <span>Documentação PT/EN — seu time internacional lê sem tradutor</span>
-                        </div>
-
+                <div class="about-info">
+                    <div class="about-text">
+                        <p>Suporte Técnico TI. Estudante de ADS e Engenharia de Software. Curso AWS em andamento.</p>
+                        <p>Construo interfaces responsivas com HTML, CSS e JavaScript. Back-end em Java e Python.
+                            Documentação técnica em PT/EN.</p>
                     </div>
+
+
+                    <div class="about-stats">
+                        <div class="stat-item"><strong>0</strong> Repositórios GitHub</div>
+                        <div class="stat-item"><strong>0</strong> Certificações / Cursos</div>
+                    </div>
+
 
                 </div>
 
-                <div class="about-stats">
-
-                    <div class="stat">
-                        <strong class="stat-value" data-count="2">0</strong>
-                        <span class="stat-label">Graduações em andamento</span>
+                <div class="about-image-container">
+                    <div class="profile-avatar">
+                        <img src="" alt="Photo">
                     </div>
-                    <div class="stat">
-                        <strong class="stat-value" data-count="12">0</strong>
-                        <span class="stat-label">Repositorios GitHub</span>
-                    </div>
-                    <div class="stat">
-                        <strong class="stat-value" data-count="4">0</strong>
-                        <span class="stat-label">Certificações / Cursos</span>
-                    </div>
-
                 </div>
-
             </div>
-
         </section>
 
         <section id="projects">
-            <header>
+            <header class="header-title">
                 <h2>Projetos</h2>
             </header>
 
             <div id="projects-loading" class="loading" aria-live="polite">
 
-                <i class="bi bi-arrow-clockwise loading-icon"></i> Carregando projetos...
+                <span class="loader"></span>
 
             </div>
 
@@ -151,65 +137,266 @@
 
         </section>
 
-
         <section id="skills">
-            <header>
+            <header class="header-title">
                 <h2>Habilidades</h2>
 
             </header>
 
             <div class="skills-grid">
 
-                <div class="skill-category">
+                <div class="skill-category" id="frontend">
                     <h3>Frontend</h3>
                     <ul>
-                        <li><img src="https://cdn-icons-png.flaticon.com/128/174/174854.png" alt="HTML"
-                                class="skill-icon"></li>
-                        <li><img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt="CSS"
-                                class="skill-icon"></li>
-                        <li><img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="JavaScript"
-                                class="skill-icon"></li>
+                        <li>
+                            <div class="skill-card">
+                                <img src="./img/html-124-svgrepo-com (1).svg" alt="HTML" class="skill-icon">
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="skill-card"><img src="./img/css3-02-svgrepo-com (1).svg" alt="CSS"
+                                    class="skill-icon"></div>
+                        </li>
+
+                        <li>
+                            <div class="skill-card"><img src="./img/js01-svgrepo-com (1).svg" alt="JavaScript"
+                                    class="skill-icon"></div>
+                        </li>
                     </ul>
 
                 </div>
-                <div class="skill-category">
+                <div class="skill-category" id="backend">
 
                     <h3>Backend</h3>
                     <ul>
-                        <li><img src="https://cdn-icons-png.flaticon.com/128/5968/5968350.png" alt="Python"
-                                class="skill-icon"></li>
-                        <li><img src="https://cdn-icons-png.flaticon.com/128/5968/5968282.png" alt="Java"
-                                class="skill-icon"></li>
+                        <li>
+                            <div class="skill-card"><img src="./img/python-svgrepo-com (1).svg" alt="Python"
+                                    class="skill-icon"></div>
+                        </li>
+
+                        <li>
+                            <div class="skill-card"><img src="./img/java-svgrepo-com (1).svg" alt="Java"
+                                    class="skill-icon"></div>
+                        </li>
                     </ul>
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-category" id="db">
 
                     <h3>Banco de Dados</h3>
                     <ul>
-                        <li><img src="https://cdn-icons-png.flaticon.com/128/5968/5968313.png" alt="SQL"
-                                class="skill-icon"></li>
-                        <li><img src="https://images.icon-icons.com/2415/PNG/512/mongodb_plain_wordmark_logo_icon_146423.png"
-                                width="170" alt="MongoDB" class="skill-icon"></li>
+                        <li>
+                            <div class="skill-card"><img src="./img/mysql-svgrepo-com (1).svg" alt="SQL"
+                                    class="skill-icon"></div>
+                        </li>
+
+                        <li>
+                            <div class="skill-card"><img src="./img/mongodb-svgrepo-com (1).svg" alt="MongoDB"
+                                    class="skill-icon"></div>
+                        </li>
                     </ul>
 
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-category" id="devops">
 
                     <h3>DevOps</h3>
                     <ul>
-                        <li><img src="https://cdn-icons-png.flaticon.com/128/15455/15455742.png" alt="Git/GitHub"
-                                class="skill-icon"></li>
-                        <li><img src="https://cdn-icons-png.flaticon.com/128/15466/15466088.png" alt="Docker"
-                                class="skill-icon"></li>
-                        <li><img src="https://cdn-icons-png.flaticon.com/128/6124/6124995.png" alt="Linux"
-                                class="skill-icon"></li>
-                        <li><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/aws-icon.png"
-                                width="170" alt="AWS" class="skill-icon"></li>
+                        <li>
+                            <div class="skill-card"><img src="./img/git-svgrepo-com (1).svg" alt="Git/GitHub"
+                                    class="skill-icon"></div>
+                        </li>
+
+                        <li>
+                            <div class="skill-card"><img src="./img/docker-svgrepo-com (1).svg" alt="Docker"
+                                    class="skill-icon"></div>
+                        </li>
+
+                        <li>
+                            <div class="skill-card"><img src="./img/linux-svgrepo-com (1).svg" alt="Linux"
+                                    class="skill-icon"></div>
+                        </li>
+
+                        <li>
+                            <div class="skill-card"><img src="./img/aws-svgrepo-com (1).svg" alt="AWS"
+                                    class="skill-icon"></div>
+                        </li>
                     </ul>
 
                 </div>
+
+            </div>
+            </div>
+
+        </section>
+
+        <section id="experience">
+
+            <header class="header-title">
+                <h2>Experiencias</h2>
+
+            </header>
+
+
+            <div class="experience-container">
+
+                <div class="experience-sidebar">
+
+                    <div class="experience-page active" data-page="1">
+
+                        <button class="exp-btn active" data-target="exp-1">
+                            <img src="" alt="Jala">Lorem
+                        </button>
+                        <button class="exp-btn" data-target="exp-2">
+                            <img src="" alt="Jala">Lorem
+                        </button>
+                        <button class="exp-btn" data-target="exp-3">
+                            <img src="" alt="Jala">Lorem
+                        </button>
+
+                    </div>
+
+                    <div class="experience-page" data-page="2">
+                        <button class="exp-btn" data-target="exp-4">
+                            <img src="" alt="Jala">Lorem
+                        </button>
+                        <button class="exp-btn" data-target="exp-5">
+                            <img src="" alt="Jala">Lorem
+                        </button>
+                        <button class="exp-btn" data-target="exp-6">
+                            <img src="" alt="Jala">Lorem
+                        </button>
+                    </div>
+
+                    <div class="navigator">
+                        <button class="nav-arrow" id="prev-page">&lt</button>
+                        <span id="page-indicator">1 de 2</span>
+                        <button class="nav-arrow" id="next-page">&gt</button>
+                    </div>
+
+                </div>
+
+                <div class="experience-about">
+
+
+                    <div class="experience-content active" id="exp-1">
+                        <h3>Estudante <span class="highlight-txt">Lorem</span></h3>
+                        <hr class="fade-line">
+                        <ul>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugit nulla, placeat
+                                eveniet delectus ullam sequi blanditiis laudantium sapiente sint molestias sunt magni
+                                reiciendis voluptates ratione doloremque nobis sit fuga?</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique distinctio doloribus
+                                aut soluta necessitatibus quas natus autem, ad saepe dolor aliquid unde, aliquam
+                                adipisci tempore et iusto, quo reprehenderit iure.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor corrupti vel a autem
+                                reiciendis. Qui, ipsa. Rerum ratione molestiae labore assumenda! Perspiciatis, explicabo
+                                quis natus nostrum ea neque blanditiis. Repellat!</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam eos illo eligendi rem
+                                sed delectus numquam similique inventore eum maxime. Tempora rem quibusdam natus iure
+                                labore voluptas optio facilis consequuntur.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-content" id="exp-2">
+                        <h3>Estudante <span class="highlight-txt">Lorem</span></h3>
+                        <hr class="fade-line">
+                        <ul>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugit nulla, placeat
+                                eveniet delectus ullam sequi blanditiis laudantium sapiente sint molestias sunt magni
+                                reiciendis voluptates ratione doloremque nobis sit fuga?</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique distinctio doloribus
+                                aut soluta necessitatibus quas natus autem, ad saepe dolor aliquid unde, aliquam
+                                adipisci tempore et iusto, quo reprehenderit iure.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor corrupti vel a autem
+                                reiciendis. Qui, ipsa. Rerum ratione molestiae labore assumenda! Perspiciatis, explicabo
+                                quis natus nostrum ea neque blanditiis. Repellat!</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam eos illo eligendi rem
+                                sed delectus numquam similique inventore eum maxime. Tempora rem quibusdam natus iure
+                                labore voluptas optio facilis consequuntur.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-content" id="exp-3">
+                        <h3>Estudante <span class="highlight-txt">Lorem</span></h3>
+                        <hr class="fade-line">
+                        <ul>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugit nulla, placeat
+                                eveniet delectus ullam sequi blanditiis laudantium sapiente sint molestias sunt magni
+                                reiciendis voluptates ratione doloremque nobis sit fuga?</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique distinctio doloribus
+                                aut soluta necessitatibus quas natus autem, ad saepe dolor aliquid unde, aliquam
+                                adipisci tempore et iusto, quo reprehenderit iure.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor corrupti vel a autem
+                                reiciendis. Qui, ipsa. Rerum ratione molestiae labore assumenda! Perspiciatis, explicabo
+                                quis natus nostrum ea neque blanditiis. Repellat!</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam eos illo eligendi rem
+                                sed delectus numquam similique inventore eum maxime. Tempora rem quibusdam natus iure
+                                labore voluptas optio facilis consequuntur.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-content" id="exp-4">
+                        <h3>Estudante <span class="highlight-txt">Lorem</span></h3>
+                        <hr class="fade-line">
+                        <ul>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugit nulla, placeat
+                                eveniet delectus ullam sequi blanditiis laudantium sapiente sint molestias sunt magni
+                                reiciendis voluptates ratione doloremque nobis sit fuga?</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique distinctio doloribus
+                                aut soluta necessitatibus quas natus autem, ad saepe dolor aliquid unde, aliquam
+                                adipisci tempore et iusto, quo reprehenderit iure.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor corrupti vel a autem
+                                reiciendis. Qui, ipsa. Rerum ratione molestiae labore assumenda! Perspiciatis, explicabo
+                                quis natus nostrum ea neque blanditiis. Repellat!</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam eos illo eligendi rem
+                                sed delectus numquam similique inventore eum maxime. Tempora rem quibusdam natus iure
+                                labore voluptas optio facilis consequuntur.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-content" id="exp-5">
+                        <h3>Estudante <span class="highlight-txt">Lorem</span></h3>
+                        <hr class="fade-line">
+                        <ul>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugit nulla, placeat
+                                eveniet delectus ullam sequi blanditiis laudantium sapiente sint molestias sunt magni
+                                reiciendis voluptates ratione doloremque nobis sit fuga?</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique distinctio doloribus
+                                aut soluta necessitatibus quas natus autem, ad saepe dolor aliquid unde, aliquam
+                                adipisci tempore et iusto, quo reprehenderit iure.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor corrupti vel a autem
+                                reiciendis. Qui, ipsa. Rerum ratione molestiae labore assumenda! Perspiciatis, explicabo
+                                quis natus nostrum ea neque blanditiis. Repellat!</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam eos illo eligendi rem
+                                sed delectus numquam similique inventore eum maxime. Tempora rem quibusdam natus iure
+                                labore voluptas optio facilis consequuntur.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-content" id="exp-6">
+                        <h3>Estudante <span class="highlight-txt">Lorem</span></h3>
+                        <hr class="fade-line">
+                        <ul>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugit nulla, placeat
+                                eveniet delectus ullam sequi blanditiis laudantium sapiente sint molestias sunt magni
+                                reiciendis voluptates ratione doloremque nobis sit fuga?</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique distinctio doloribus
+                                aut soluta necessitatibus quas natus autem, ad saepe dolor aliquid unde, aliquam
+                                adipisci tempore et iusto, quo reprehenderit iure.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor corrupti vel a autem
+                                reiciendis. Qui, ipsa. Rerum ratione molestiae labore assumenda! Perspiciatis, explicabo
+                                quis natus nostrum ea neque blanditiis. Repellat!</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam eos illo eligendi rem
+                                sed delectus numquam similique inventore eum maxime. Tempora rem quibusdam natus iure
+                                labore voluptas optio facilis consequuntur.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
 
             </div>
 
@@ -217,18 +404,17 @@
 
         <section id="contact">
             <header>
-
-                <h2>Contato</h2>
-
+                <h2 class="header-title">Contato</h2>
             </header>
 
             <div class="contact-list">
-
+                <a href="mailto:victorzache.dev@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i> E-mail</a>
+                <a href="https://github.com/VictorZache" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub"><i class="bi bi-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-zach%C3%A9-700567244/" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i> LinkedIn</a>
             </div>
-
         </section>
-
-
 
     </main>
 
@@ -238,7 +424,8 @@
 
     </footer>
 
-
+    <script src="./js/game-of-life.js"></script>
+    <script src="./js/exp-section.js"></script>
 </body>
 
 </html>
